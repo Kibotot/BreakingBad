@@ -22,6 +22,9 @@ const CharacterItem = ({ item }) => {
             <li>
               <strong>Status:</strong> {item.status}
             </li>
+            <li>
+              <strong>Occupation:</strong> {item.occupation[0]}
+            </li>
           </ul>
         </div>
       </div>

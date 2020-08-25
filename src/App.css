@@ -89,20 +89,6 @@ input[type="text"] {
   gap: 1rem;
 }
 
-@media (max-width: 800px) {
-  .cards .cards {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .cards .cards {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .card {
   cursor: pointer;
   background-color: transparent;
@@ -162,5 +148,19 @@ input[type="text"] {
 .card li {
   list-style: none;
   padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=App.css.map */
